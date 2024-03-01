@@ -1,0 +1,426 @@
+
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.6rem;
+  color: #2d2f31;
+}
+/* width="75" height="28" style="vertical-align: middle;" */
+.pag1{
+  display: grid;
+  grid-template-rows: 20px auto 50px;
+  grid-template-columns: repeat(10,2fr);
+  height: 100vh;
+  grid-template-areas: 
+  "nav nav  nav nav nav nav nav nav nav nav"
+  " cont cont cont cont cont cont cont cont cont cont"
+  " foot foot foot foot foot foot foot foot foot foot";
+}
+nav{grid-area: nav;}
+
+nav{
+  height: 75px;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-evenly;
+  padding: 5px;
+  background-color: white;
+  align-content: center;
+
+}
+
+
+nav a{
+  margin: 30px 10px 30px 10px ;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  
+}
+nav a:hover{
+  color: blueviolet;
+}
+nav .a4{
+  background-color: white;
+  border: solid black 2px;
+  color: black;
+  font-weight:bold ;
+  width: 80px;
+  height: 30px;
+  margin: 20px 5px 5px 10px;
+  text-align: center;
+  padding-top: 5px;
+  
+}
+nav .a5{
+  background-color: black;
+  border: solid black 2px;
+  color:white;
+  font-weight:bold ;
+  width: 80px;
+  height: 30px;
+  margin: 20px 10px 10px 10px;
+  text-align: center;
+  padding-top: 5px;
+  
+}
+.a4:hover{
+  background-color: rgb(191, 191, 191);
+}
+
+
+nav .search{
+  width: 550px;
+  margin: 20px;
+  border-radius: 25px ;
+  border: solid gray 2px;
+  background-color: rgb(243, 243, 243);
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+
+ section{
+  grid-area: cont;
+  position: relative;
+ }
+ section div{
+  position: absolute;
+  top:50px;
+  width: 400px;
+  height:150px ;
+  background-color: white;
+  margin-left: 40px;
+  padding: 20px;
+ }
+ section div h1{
+  font-size: 35px;
+ }
+ section div p{
+  font-size: 20px;
+ }
+ .list{
+  margin-left: -50x;
+ }
+ footer{
+  grid-area: foot;
+  margin-left: 30px;
+ }
+ footer h1{
+  font-size: 40px;
+ }
+ footer p{
+  font-size: 20px;
+ }
+footer li{
+  padding: 15px;
+  list-style-type: none;
+  display: inline-block;
+  color: rgb(98, 97, 97);
+  font-weight: bold;
+  font-size: 20px;
+}
+li:hover{
+  color: black;
+}
+.page2{
+  display: flex ;
+  flex-flow: row wrap;
+  width:auto;
+  height: auto;
+  padding-left: 20px;
+}
+
+@media screen and (min-width:501px)and (max-width:1120px){
+  
+}
+.page2.gallery {
+  margin: 10px;
+  width: 50%;
+}
+.page2.gallery img {
+  width: 70%;
+  height: auto;
+}
+
+.page2.desc {
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+  width: 70%;
+ 
+  
+}
+.checked {
+  color: orange;
+
+}
+.cap{
+  margin-top:80px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(243, 243, 243);
+  padding: 20px 0px 0px 20px;
+  
+}
+.cap2{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 0px 0px 20px;
+}
+.page3{
+  display: flex ;
+  flex-flow: row wrap;
+  width:auto;
+  height: auto;
+  padding-left: 10px;
+}
+  
+.page3 .d1{
+  width: 350px;
+  height: 400px;
+  margin: 20px;
+  border: solid rgb(194, 194, 194) 1px;
+  padding: 25px;
+  background-color:white;
+  font-size: 18px;
+}
+.d1 img{
+  padding: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+
+.page3 span{
+  margin: 100px 0px 20px 10px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+}
+.page3 p{
+  color: blueviolet;
+  font-weight: bold;
+}
+.page4{
+  display: flex;
+  flex-flow: row wrap;
+  margin:30px 5px 20px 5px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  
+}
+div.gallery{
+  margin: 5px;
+  width: auto;
+  border: solid rgb(194, 194, 194) 1px;
+}
+
+
+
+div.gallery img {
+  width: 250px;
+  height: auto;
+}
+div.desc {
+
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+  width: 200px;
+}
+.page5{
+  display: flex ;
+  flex-flow: row wrap;
+  width:100%;
+  height: auto;
+  padding-left: 20px;
+  margin-left: 30px;
+  margin-top: 100px;
+}
+div.gallery2 {
+  margin: 10px;
+  width: 400px;
+}
+
+
+div.gallery2 img {
+  width: 100%;
+  height: auto;
+}
+div.gallery2 img:hover{
+  width: 60%;
+  height: auto;
+}
+
+div.desc2 {
+  
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+}
+.page6{
+  width: 100%;
+  height: auto;
+}
+.page6 img{
+  margin: 0px;
+  padding: 60px;
+  
+}
+.page6 p1{
+  padding-left: 0px;
+}
+.page6 p5{
+  padding-right: 0px;
+}
+.hed1{
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.page6 h1,p {
+  text-align: center;
+}
+
+
+.page7{
+    display: flex ;
+    flex-flow: row wrap;
+    width:100%;
+    height: auto;
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 200px;
+    margin-left: -100px;
+  
+}
+.page7.left{
+  display: flex ;
+  width: 300px;
+  height: auto;
+  flex-flow: column wrap;
+  margin-left: 600px;
+
+}
+
+.page7 ul{
+ margin: 15px;
+  font-size: large;
+}
+
+.right{
+  width: 300px;
+  height: auto;
+  margin-left: 600px;
+}
+.page7.right img{
+  width: 200px;
+  height: 200px;
+}
+
+.page7 .a4{
+  background-color: black;
+  border: solid black 2px;
+  text-decoration: none;
+  color: white;
+  font-weight:bold ;
+  width: auto;
+  height: 30px;
+
+  text-align: center;
+  padding: 15px;
+}
+.page7 .a5{
+  background-color:white;
+  border: solid black 2px;
+  text-decoration: none;
+  color: black;
+  font-weight:bold ;
+  width: auto;
+  height: 30px;
+  text-align: center;
+  padding: 15px;
+}
+.page7 .a4{
+
+}
+.page7 .a5{
+
+}
+.page8{
+  display: flex ;
+  flex-flow: row wrap;
+  width:100%;
+  height: auto;
+  padding-left: 20px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-left: -100px;
+
+}
+
+.page8 h1{
+ 
+
+}
+.page8 p{
+ 
+  text-align: left;
+  font-size: large;
+}
+.imgg img {
+  
+ 
+}
+
+.page8 .a5{
+  
+  background-color:rgb(10, 10, 10);
+  border: solid black 2px;
+  text-decoration: none;
+  color:white;
+  font-weight:bold ;
+  width: auto;
+  height: 30px;
+
+  text-align: center;
+  padding: 15px;
+  margin-left:100px;
+}
+.footer{
+  font-size: 15px;
+  margin-top: 90px;
+
+  width: 100%;
+  height: auto;
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+.footer table{
+  width: 100%;
+ padding: 10px;
+ margin-top: 30px;
+ 
+}
+td{
+  text-align: center;
+  padding: 6px;
+}
+.footer .img1{
+  margin-top: 40px;
+  padding: 20px;
+  width: 100px;
+}
+/*  */
+    /* border: solid rgb(160, 160, 160) 1px; */
+  
+  
+  
+

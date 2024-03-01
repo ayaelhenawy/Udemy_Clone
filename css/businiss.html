@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            teach udemy
+        </title>
+        <meta charset="utf-8">
+        <style>
+            @media screen and (max-width:400px)
+             {
+                
+                .first
+                {
+                    width: 100%;
+                    height: 30%;
+                    padding: 0px;
+                    margin: 0px;
+                }
+    .pa
+    {
+        padding: 0px 100px 0px 100px;
+    }
+    .bar
+    {
+        width: 100%;
+        height: 10px;
+    }
+    ul
+    {
+        padding: 10px;
+        margin: 10px;
+    }
+    .menu
+    {
+        width: 100%;
+        height: 30px;
+    }
+            }
+            @media screen and (max-width:768px) and (min-width:401px)
+             {
+                .first
+                {
+                    width: 100%;
+                    height: 50%;
+                    padding: 5px;
+                    margin: 5px;
+                }
+                nav
+    {
+        grid-area: nav;
+    }
+    img
+    {
+        grid-area: img; 
+    }
+    .pa
+    {
+        padding: 0px 100px 0px 100px;
+    }
+    .bar
+    {
+        width: 100%;
+        height: 10px;
+    }
+    ul
+    {
+        padding: 10px;
+        margin: 10px;
+    }
+    .menu
+    {
+        width: 100%;
+        height: 30px;
+    }
+            }
+            div
+            {
+                box-sizing: border-box;
+                padding: 0px;
+                margin: 0px;
+            }
+    .first
+    {
+        background-color: aliceblue;
+        display: grid;
+        height: 25%;
+        grid-template-columns: repeat(8, auto);
+        grid-template-rows: repeat(4 , auto);
+        grid-template-areas: " . . nav nav img img . .";
+    }
+    nav
+    {
+        grid-area: nav;
+    }
+    img
+    {
+        grid-area: img; 
+    }
+    .pa
+    {
+        padding: 0px 0px 0px 200px;
+    }
+    .bar
+    {
+        width: 100%;
+        height: 70px;
+    }
+    ul
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu
+    {
+        width: 100%;
+        height: 60px;
+    }
+    .container
+    {
+        width: 200px;
+        height: 300px;
+        padding: 5px 50px;
+        float: left;
+    }
+    .menu > ul
+    {
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        list-style-type: none;
+    }
+    .menu > ul > li
+    {
+        float: left;
+    }
+    .item
+    {
+        display: inline-block;
+        padding: 15px 30px;
+    }
+    .sub-content
+    {
+     position: absolute;
+        overflow: hidden;
+        text-decoration: none;
+        max-height: 0px;
+    }
+    .sub
+    {
+        padding: 0px;
+    }
+    .sub ul
+    {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+    }
+    .sub ul li a
+    {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    .menu > ul >li >a
+    {
+        text-decoration: none;
+    }
+    .menu > ul >li > ul> li >a
+    {
+        text-decoration: none;
+        list-style-type: none ;
+    }  
+.item:focus ~ .sub-content
+{
+    max-height: 400px;
+    background-color:white;
+}
+.input >input
+{
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+input
+{
+    background-color: black;
+    color: white;
+    padding: 10px 40px 10px 40px;
+}
+input:hover
+{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+footer
+{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(10 , auto);
+    grid-template-rows: repeat(10 , auto);
+    grid-template-areas: " table table table  table  table  table  table . input input";
+}
+footer > table
+{
+    grid-area: table;
+}
+footer > input
+{
+    grid-area: input;
+   width: 150px;
+   height: 50px;
+   background-color: black;
+   color: white;
+   cursor: pointer;
+   border: 5px;
+   border-color: white;
+}
+section
+{
+    display: grid;
+        height: 25%;
+        grid-template-columns: repeat(8, auto);
+        grid-template-rows: repeat(4 , auto);
+        grid-template-areas: " . . table table table table . .";
+        padding: 0px 200px;
+}
+section > table
+{
+    grid-area: table;
+}
+     </style>
+    </head>
+    <body>
+        <header>
+        <div class="bar">
+       <nav class="menu">
+       <div class="container">
+        <a href="#" class="logo">
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="udemy-logo">
+        </a>
+       </div>
+        <ul>
+            <li> <a class="item" href="aaaa">Teaching Center</a></li>
+            <li><a  class="item" href=""> teaching on udemy</a>
+                <div class="sub-content">
+                    <div class="sub">
+            <ul>
+                <li> <a href="aaaaa">why teach online with udemy</a> </li>
+                <li>  <a href="aaaaa">how to become an instructor on udemy</a> </li>
+                <li>  <a href="aaaaa">resource for your instructor journy</a> </li>
+                <li>  <a href="aaaaa">how udemy marketing benfit you </a></li>
+                <li>  <a href="aaaaa">about udemy busness</a></li>
+                <li>  <a href="aaaaa">connect with instructor in our commuinty</a></li>
+                <li> <a href="aaaaa"> about the udemy instrctor partner program</a></li>
+            </ul>
+            </div>
+            </div>
+            </li>
+            <li><a class="item"  href="">  planning</a>
+                <div class="sub-content">
+                    <div class="sub">
+            <ul>
+                <li>  <a href="aaaaa">recommend course creation process </a></li>
+                <li>  <a href="aaaaa">choose your course topic </a></li>
+                <li>  <a href="aaaaa">define your audience </a></li>
+                <li>  <a href="aaaaa">create your learning objective</a> </li>
+                <li>  <a href="aaaaa">outline your course </a></li>
+                <li>  <a href="aaaaa">the value of scripting</a> </li>
+            </ul>
+            </div>
+            </div>
+            </li>
+            <li><a class="item"  href=""> recording</a>
+                <div class="sub-content">
+                    <div class="sub">
+            <ul>
+                <li>  <a href="aaaaa">before you begain recording </a></li>
+                <li>  <a href="aaaaa">set up your recording space</a></li>
+                <li>  <a href="aaaaa">resolve common audio issues</a></li>
+                <li>  <a href="aaaaa">check your quality with test video </a></li>
+                <li> <a href="aaaaa"> editing tips</a></li>
+                <li> <a href="aaaaa">how to export your vedio</a></li>
+            </ul>
+            </div>
+            </div>
+            </li>
+            <li><a class="item"  href=""> puplish</a>
+                <div class="sub-content">
+                    <div class="sub">
+            <ul>
+                <li>  <a href="aaaaa">create your course landing page </a></li>
+                <li> <a href="aaaaa"> guide to creating a promo video</a></li>
+                <li> <a href="aaaaa">price your course and promotion</a></li>
+                <li> <a href="aaaaa">set up automatic message to learn</a></li>
+                <li>  <a href="aaaaa">about automatically generated captions</a></li>
+            </ul>
+            </div>
+            </div>
+            </li>
+            <li> <a class="item" href=""> marketing</a>
+                <div class="sub-content">
+                    <div class="sub">
+            <ul>
+                <li> <a href="aaaaa">engage with your learners</a></li>
+                <li> <a href="aaaaa">establish your credibility with review</a></li>
+                <li> <a href="aaaaa">make the most of coupons and referrals</a></li>
+                <li> <a href="aaaaa">how you can market your course</a></li>
+                <li> <a href="aaaaa">improve your courses search resulits</a></li>
+            </ul>
+            </div>
+            </div>
+            </li>
+            <li><a class="item" href=""> news</a></li>
+            <li><input class="item" type="search"></li>
+        </ul>
+       </nav>
+        </div>
+        </header>
+        <div class="first">
+            <nav>
+          <h1>
+            Teaching online with 
+            <br>
+            Udemy
+          </h1>
+          <p>
+            <h3>
+            Get the basics of creating a course and sharing your passion and
+            <br>
+            knowledge with learners all over the globe.
+        </h3>  
+        </p>
+        </nav>
+            <img src="https://teach.udemy.com/wp-content/uploads/2021/07/teaching.jpg" width="400px" height="300px">
+        </div>
+        <div class="pa">
+        <h1>
+            8 articles
+        </h1>
+        <hr><h2>
+        <a href="https://teach.udemy.com/teaching-on-udemy/why-teach-online-on-udemy/">Why teach online with Udemy</a></h2>
+        <p><h3>
+            If you’re driven to share your knowledge and empower learners to achieve their goals, then teaching <br>is the perfect opportunity for you. While all teaching lets you share your experience, online teaching<br> gives you the flexibility to do so at a global scale and at your own convenience. Don’t worry if you’ve...
+        </h3></p>
+        <h3>
+        <a href="https://teach.udemy.com/teaching-on-udemy/why-teach-online-on-udemy/">Read more</a></h3>
+        <hr>
+        <h2>
+        <a href="https://teach.udemy.com/teaching-on-udemy/how-to-become-an-instructor-on-udemy/">How to become an instructor on Udemy</a></h2>
+        <p><h3>
+            Getting started: An overview for creating a course on Udemy Whether you need help creating your<br> first Udemy course or you already have existing video content, we’ve got you covered. The first step <br>is to sign up to become an instructor. We’re here to help you share your knowledge and give you the<br> potential to...
+        </h3></p>
+        <h3>
+        <a href="https://teach.udemy.com/teaching-on-udemy/how-to-become-an-instructor-on-udemy/">Read more</a></h3>
+        <hr>
+        <h2>
+        <a href="https://teach.udemy.com/teaching-on-udemy/how-udemy-markets-for-you/">How Udemy marketing benefits you</a></h2>
+        <p><h3>
+            Our team around the world is dedicated to learning more about our learners so that they can get the<br> right courses in front of the right learners. We’re constantly innovating and experimenting based on<br> our growing knowledge of what learners need and which courses are a good fit for them. We use<br> what we know about a...
+        </h3></p>
+        <h3>
+        <a href="https://teach.udemy.com/teaching-on-udemy/how-udemy-markets-for-you/">Read more</a></h3>
+        <hr>
+        <h2>
+        <a href="https://teach.udemy.com/teaching-on-udemy/the-instructor-journey/">Resources for your instructor journey</a></h2>
+        <p><h3>
+            How to create an online course on Udemy We’re here to guide you on your journey by sharing<br> resources to create an engaging online course. Teaching online is an amazing opportunity to reach <br>learners at a scale that’s unimaginable to do in person, but it requires a commitment of your time <br>and energy. Successful...
+        </h3></p>
+        <h3>
+        <a href="https://teach.udemy.com/teaching-on-udemy/the-instructor-journey/">Read more</a></h3>
+        <hr>
+        <h2>
+        <a href="https://teach.udemy.com/teaching-on-udemy/about-udemy-for-business/">About Udemy Business</a></h2>
+        <p><h3>
+            With Udemy Business, organizations can solve their biggest workforce challenges by using Udemy<br> courses to train their employees.  Adidas, HSBC, Barclays, Lyft, Bloomingdales, Pinterest, Accenture,<br> and Ernst & Young have all used Udemy Business. Read more about how Udemy Business is helping<br> customers meet their...
+        </h3></p>
+        <h3>
+        <a href="https://teach.udemy.com/teaching-on-udemy/about-udemy-for-business/">Read more</a></h3>
+        <hr>
+        </div>
+        <hr>
+        <center>
+            <div class="input">
+            <input type="submit" value="1">
+             <input type="submit" value="2">
+             </div>
+        </center>
+        <div class="pa">
+        <h1>
+            Become an instructor today!
+        </h1>
+       <form action="aaaaaaaaa">
+        <input type="submit" value="Get Start">
+       </form>
+       </div>
+       <center>
+        <h1>
+            Have questions?
+        </h1>
+       </center>
+       <section>
+      <table width="100%">
+        <tr>
+            <td> <img src="https://teach.udemy.com/wp-content/uploads/2021/07/help-and-support.svg"></td>
+            <td> <img src="https://teach.udemy.com/wp-content/uploads/2021/07/instructor-community.svg"></td>
+            <td><img src="https://teach.udemy.com/wp-content/uploads/2021/07/trust-and-safety.svg"></td>
+        </tr>
+       <tr>
+        <td> <a href="aaaaa"> Help and Support </a></td>
+        <td> <a href="qqqq"> Instructor Commuinty</a></td>
+        <td><a href="eeee">Trust and Sfty</a></td>
+       </tr>
+      <tr> 
+        <td><h3> Find answers to frequently asked questions and review troubleshooting and how-to articles.</h3></td>
+        <td><h3>Get support and inspiration from new and experienced instructors.</h3></td>
+        <td><h3>Learn about course requirements and policies for instructors and learners.</h3></td>
+      </tr>
+      </table>
+      </section>
+       <footer>
+       <table style="width: 40%;">
+        <tr>
+            <td><a href="https://business.udemy.com/?locale=en_US&mx_pg=home-page&ref=footer&user_type=visitor&utm_method=0">Udemy Busniess</a><br><br></td>
+            <td><a href="https://about.udemy.com/careers/?locale=en-us">Career</a><br><br></td>
+            <td><a href="https://www.udemy.com/terms/">Terms</a><br><br></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.udemy.com/teaching/?ref=teach_footer">Teach on udemy</a><br><br></td>
+            <td><a href="https://blog.udemy.com/?ref=footer">Blog</a><br><br></td>
+            <td><a href="https://www.udemy.com/terms/privacy//">Privacy policy</a><br><br></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.udemy.com/mobile/">Get the app</a><br><br></td>
+            <td><a href="https://support.udemy.com/hc/en-us">Help and support</a><br><br></td>
+            <td><a href="https://cookies.udemy">cookie setting</a><br><br></td>
+        </tr>
+        <tr>
+            <td><a href="https://about.udemy.com/?locale=en-us">About us</a><br><br></td>
+            <td><a href="https://www.udemy.com/affiliate/">Affiliate</a><br><br></td>
+            <td><a href="https://www.udemy.com/sitemap/">Sitemap</a><br><br></td>
+        </tr>
+        <tr>
+            <td><a href="https://about.udemy.com/company/?locale=en-us#offices">Contact us</a></td>
+            <td><a href="https://investors.udemy.com/">investors</a></td>
+            <td><a href="https://about.udemy.com/accessibility-statement/?locale=en-us">Accessibility statement</a></td>
+        </tr>
+    </table>
+    <input type="submit" value="English">
+    <div class="asmaa">
+        <a href="#" class="logo">
+            <img src="https://teach.udemy.com/wp-content/themes/wp-teach/assets/images/logo-inverse.svg" alt="udemy-logo">
+        </a>
+       </div>
+    </footer>
+    </body>
+</html>
+
